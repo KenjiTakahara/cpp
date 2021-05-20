@@ -4,6 +4,10 @@
 
 int main()
 {
-    for (;;)
+ //   for (;;)
+
+
+
+
         std::cout << "💩";
 }
