@@ -1,5 +1,6 @@
 #include <iostream>
+#include "all.h"
 int main()
 {
-    std::cout << "testtest" << '\n';
+    cout << "testtest" << endl;
 }
