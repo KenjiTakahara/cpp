@@ -1,0 +1,15 @@
+/home/takahara/cpp/cs/bin/Debug/net6.0/cs
+/home/takahara/cpp/cs/bin/Debug/net6.0/cs.deps.json
+/home/takahara/cpp/cs/bin/Debug/net6.0/cs.runtimeconfig.json
+/home/takahara/cpp/cs/bin/Debug/net6.0/cs.dll
+/home/takahara/cpp/cs/bin/Debug/net6.0/ref/cs.dll
+/home/takahara/cpp/cs/bin/Debug/net6.0/cs.pdb
+/home/takahara/cpp/cs/obj/Debug/net6.0/cs.csproj.AssemblyReference.cache
+/home/takahara/cpp/cs/obj/Debug/net6.0/cs.GeneratedMSBuildEditorConfig.editorconfig
+/home/takahara/cpp/cs/obj/Debug/net6.0/cs.AssemblyInfoInputs.cache
+/home/takahara/cpp/cs/obj/Debug/net6.0/cs.AssemblyInfo.cs
+/home/takahara/cpp/cs/obj/Debug/net6.0/cs.csproj.CoreCompileInputs.cache
+/home/takahara/cpp/cs/obj/Debug/net6.0/cs.dll
+/home/takahara/cpp/cs/obj/Debug/net6.0/ref/cs.dll
+/home/takahara/cpp/cs/obj/Debug/net6.0/cs.pdb
+/home/takahara/cpp/cs/obj/Debug/net6.0/cs.genruntimeconfig.cache
