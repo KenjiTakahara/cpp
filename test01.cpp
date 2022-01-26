@@ -1,27 +1,23 @@
 #include <stdio.h>
+#include <stdbool.h>
 
-class BadBase
+static void printBool(bool b)
 {
-public:
-    BadBase() { printf("open-BAS\n"); }
-    virtual ~BadBase() { printf("close-BAS\n"); }
-};
-class BadSub : public BadBase
+    if (b)
+    {
+        puts("true");
+    }
+    else
+    {
+        puts("false");
+    }
+}
+
+int main(void)
 {
-public:
-    BadSub() { printf("open-SUB\n"); }
-    ~BadSub() { printf("close-SUB\n"); }
-};
+    bool a = false;
+    printBool(a);
 
-int main()
-{
-    BadSub *sub = new BadSub();
-    delete sub;
-
-    printf("\n");
-
-    BadBase *base = new BadSub();
-    delete base;
-
-    return 0;
+    a = !a;
+    printBool(a);
 }

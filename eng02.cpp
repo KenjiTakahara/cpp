@@ -22,10 +22,10 @@ int main()
             cin >> k;
         }
     };
-    cout << "‹C“›”‚ğ“ü—Í‚µ‚ë¨ ", chkin(kit);
-    cout << "ƒ{ƒAimm)‚ğ“ü—Í‚µ‚ë¨ ", chkin(boa);
-    cout << "ƒXƒgƒ[ƒN(mm)‚ğ“ü—Í‚µ‚ë¨ ", chkin(str);
+    cout << "ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ë¨ ", chkin(kit);
+    cout << "ï¿½{ï¿½Aï¿½imm)ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ë¨ ", chkin(boa);
+    cout << "ï¿½Xï¿½gï¿½ï¿½ï¿½[ï¿½N(mm)ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ë¨ ", chkin(str);
     auto cc = [&]()
     { return pow(boa / 2, 2) * M_PI * str * kit / 1000; };
-    cout << "”r‹C—Ê = " << cc() << endl;
+    cout << "ï¿½rï¿½Cï¿½ï¿½ = " << cc() << endl;
 }
