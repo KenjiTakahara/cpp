@@ -12,7 +12,7 @@ enum class color
 };
 int main()
 {
-    auto str{"‚Œ´"s};
-    cout << "‚Œ´"s[0];
+    string s{"?"}
+    printf("%d", s);
     return EXIT_SUCCESS;
 }
