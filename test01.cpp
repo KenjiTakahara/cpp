@@ -1,14 +1,27 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include <stdio.h>
+
+class BadBase
+{
+public:
+    BadBase() { printf("open-BAS\n"); }
+    virtual ~BadBase() { printf("close-BAS\n"); }
+};
+class BadSub : public BadBase
+{
+public:
+    BadSub() { printf("open-SUB\n"); }
+    ~BadSub() { printf("close-SUB\n"); }
+};
 
 int main()
 {
-    std::vector<int> v{5, 6, -1, 3, 7, 2, 3};
-    std::sort(std::begin(v), std::end(v));
-    for (auto e : v)
-    {
-        std::cout << e << " ";
-    }
-    std::cout << "\n";
+    BadSub *sub = new BadSub();
+    delete sub;
+
+    printf("\n");
+
+    BadBase *base = new BadSub();
+    delete base;
+
+    return 0;
 }

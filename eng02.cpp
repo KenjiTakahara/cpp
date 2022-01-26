@@ -1,8 +1,11 @@
+#define _USE_MATH_DEFINES
 #include "all.h"
+
 int main()
 {
     float kit, boa, str;
-    auto chkin = [](auto &k) {
+    auto chkin = [](auto &k)
+    {
         cin >> k;
         while (cin.fail() || k <= 0)
         {
@@ -19,9 +22,10 @@ int main()
             cin >> k;
         }
     };
-    cout << "æ°—ç­’æ•°ã‚’å…¥åŠ›ã—ã‚â†’ ", chkin(kit);
-    cout << "ãƒœã‚¢ï¼ˆmm)ã‚’å…¥åŠ›ã—ã‚â†’ ", chkin(boa);
-    cout << "ã‚¹ãƒˆãƒ­ãƒ¼ã‚¯(mm)ã‚’å…¥åŠ›ã—ã‚â†’ ", chkin(str);
-    auto cc = [&]() { return pow(boa / 2, 2) * M_PI * str * kit / 1000; };
-    cout << "æ’æ°—é‡ = " << cc() << endl;
+    cout << "‹C“›”‚ğ“ü—Í‚µ‚ë¨ ", chkin(kit);
+    cout << "ƒ{ƒAimm)‚ğ“ü—Í‚µ‚ë¨ ", chkin(boa);
+    cout << "ƒXƒgƒ[ƒN(mm)‚ğ“ü—Í‚µ‚ë¨ ", chkin(str);
+    auto cc = [&]()
+    { return pow(boa / 2, 2) * M_PI * str * kit / 1000; };
+    cout << "”r‹C—Ê = " << cc() << endl;
 }
