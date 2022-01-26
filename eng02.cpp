@@ -1,5 +1,6 @@
+#define _USE_MATH_DEFINES
 #include "all.h"
-#define M_PI 3.141592
+
 int main()
 {
     float kit, boa, str;
