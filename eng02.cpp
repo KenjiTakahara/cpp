@@ -22,10 +22,10 @@ int main()
             cin >> k;
         }
     };
-    cout << "�C��������͂��끨 ", chkin(kit);
-    cout << "�{�A�imm)����͂��끨 ", chkin(boa);
-    cout << "�X�g���[�N(mm)����͂��끨 ", chkin(str);
+    cout << "気筒数はいくつですか？", chkin(kit);
+    cout << "ボアは何ミリですか？", chkin(boa);
+    cout << "ストロークは何ミリですか？", chkin(str);
     auto cc = [&]()
     { return pow(boa / 2, 2) * M_PI * str * kit / 1000; };
-    cout << "�r�C�� = " << cc() << endl;
+    cout << "排気量は【" << cc() << "㏄】です。" << endl;
 }
