@@ -1,18 +1,27 @@
-#include "all.h"
-using namespace std;
-enum class color
+#include <stdio.h>
+
+class BadBase
 {
-    Red,    // 0
-    Blue,   // 1
-    Green,  // 2
-    Yellow, // 3
-    Purple, // 4
-    White,  // 5
-    Black   // 6
+public:
+    BadBase() { printf("open-BAS\n"); }
+    virtual ~BadBase() { printf("close-BAS\n"); }
 };
+class BadSub : public BadBase
+{
+public:
+    BadSub() { printf("open-SUB\n"); }
+    ~BadSub() { printf("close-SUB\n"); }
+};
+
 int main()
 {
-    string s{"?"}
-    printf("%d", s);
-    return EXIT_SUCCESS;
+    BadSub *sub = new BadSub();
+    delete sub;
+
+    printf("\n");
+
+    BadBase *base = new BadSub();
+    delete base;
+
+    return 0;
 }
