@@ -27,5 +27,5 @@ int main()
     cout << "ストロークは何ミリですか？", chkin(str);
     auto cc = [&]()
     { return pow(boa / 2, 2) * M_PI * str * kit / 1000; };
-    cout << L"排気量は【" << cc() << "㏄】です。" << endl;
+    cout << "排気量は【" << cc() << "㏄】です。" << endl;
 }
