@@ -22,10 +22,10 @@ int main()
             cin >> k;
         }
     };
-    cout << "気筒数はいくつですか？", chkin(kit);
-    cout << "ボアは何ミリですか？", chkin(boa);
-    cout << "ストロークは何ミリですか？", chkin(str);
+    cout << "How many cylinders？", chkin(kit);
+    cout << "Boa？", chkin(boa);
+    cout << "stroke？", chkin(str);
     auto cc = [&]()
     { return pow(boa / 2, 2) * M_PI * str * kit / 1000; };
-    cout << "排気量は【" << cc() << "㏄】です。" << endl;
+    cout << "Displacement is " << cc() <<"cc" << endl;
 }
