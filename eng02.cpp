@@ -24,9 +24,9 @@ int main()
             cin >> k;
         }
     };
-    cout << "How many cylinders？", chkin(kit);
-    cout << "Boa？", chkin(boa);
-    cout << "stroke？", chkin(str);
+    cout << "How many cylinders? ", chkin(kit);
+    cout << "Boa? ", chkin(boa);
+    cout << "stroke? ", chkin(str);
     auto cc = [&]()
     { return pow(boa / 2, 2) * M_PI * str * kit / 1000; };
     cout << "Displacement is " << cc() <<"cc" << endl;
