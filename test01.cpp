@@ -1,23 +1,29 @@
-#include <stdio.h>
-#include <stdbool.h>
-
-static void printBool(bool b)
+#include <iostream>
+class Test01
 {
-    if (b)
-    {
-        puts("true");
-    }
-    else
-    {
-        puts("false");
-    }
+public:
+    Test01();
+    void unnko() const;
+    ~Test01();
+};
+
+Test01::Test01()
+{
+    std::cout << "test-const" << std::endl;
 }
 
-int main(void)
+void Test01::unnko() const
 {
-    bool a = false;
-    printBool(a);
+    std::cout << "kussa" << std::endl;
+}
 
-    a = !a;
-    printBool(a);
+Test01::~Test01()
+{
+    std::cout << "test-dest" << std::endl;
+}
+
+int main()
+{
+    //    auto t = Test01();
+    Test01().unnko();
 }
