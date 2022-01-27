@@ -1,7 +1,6 @@
 #include "all.h"
 int main()
 {
-    // shift_jis?¿½Å‚ï¿½
-    auto str = "‚Œ´";
+    auto str = "‚Œ´"; // shift_jis
     cout << str << endl;
 }
