@@ -1,6 +1,8 @@
 #define _USE_MATH_DEFINES
 #include "all.h"
 
+
+
 int main()
 {
     float kit, boa, str;
