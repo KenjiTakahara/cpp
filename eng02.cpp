@@ -1,4 +1,3 @@
-// ttttttggggg
 #define _USE_MATH_DEFINES
 #include "all.h"
 int main()
