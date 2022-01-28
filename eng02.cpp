@@ -1,3 +1,4 @@
+// ttttttggggg
 #define _USE_MATH_DEFINES
 #include "all.h"
 int main()
@@ -26,5 +27,5 @@ int main()
     cout << "stroke? ", chkin(str);
     auto cc = [&]()
     { return pow(boa / 2, 2) * M_PI * str * kit / 1000; };
-    cout << "Displacement is " << cc() <<"cc" << endl;
+    cout << "Displacement is " << cc() << "cc" << endl;
 }
