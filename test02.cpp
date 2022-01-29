@@ -1,5 +1,5 @@
 #include <iostream>
 int main()
 {
-    std::cout << sizeof(char *);
+    std::cout << sizeof(long long *);
 }
