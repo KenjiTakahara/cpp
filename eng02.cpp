@@ -21,8 +21,8 @@ int main()
             cin >> k;
         }
     };
-    cout << "How many cylinders? ", chkin(kit);
-    cout << "Boa? ", chkin(boa);
+    cout << "cylinders? ", chkin(kit);
+    cout << "boa? ", chkin(boa);
     cout << "stroke? ", chkin(str);
     auto cc = [&]()
     { return pow(boa / 2, 2) * M_PI * str * kit / 1000; };
