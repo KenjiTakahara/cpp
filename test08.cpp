@@ -1,16 +1,11 @@
-#include <iostream>
-#include <gmpxx.h>
+#include "all.h"
+
+void func(int &) { cout << "non-const"; };
+void func(const int &) { cout << "const"; };
 
 int main()
 {
-    mpz_class x("7612058254738945");
-    mpz_class y("9263591128439081");
-
-    std::cout << "    " << x << "\n"
-              << "*\n"
-              << "    " << y << "\n"
-              << "--------------------\n"
-              << x * y << "\n";
-
+    const int n = 12;
+    func(n);
     return 0;
 }
