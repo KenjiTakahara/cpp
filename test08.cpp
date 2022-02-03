@@ -1,16 +1,13 @@
 #include "all.h"
+
+std::pair<const char *, const char *> f()
+{
+    return {"abcdfrgy", "dddd"};
+};
 int main()
 {
-    try
-    {
-        auto v = std::vector<std::string>{"abc", "def"};
-        for (auto &r : v)
-        {
-            cout << r << endl;
-        }
-    }
-    catch (const std::exception &e)
-    {
-        std::cerr << e.what() << '\n';
-    }
+    auto t = f();
+    auto s = std::pair<const char *, const char *>{"aa", "aadede"};
+    cout << t.first << endl;
+    cout << s.second << endl;
 }
