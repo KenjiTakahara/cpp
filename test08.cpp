@@ -1,14 +1,16 @@
 #include "all.h"
 int main()
 {
-    size_t n = 1024 * 1024 * 1024;
-    auto *p = new int[n];
-    for (auto i = 0; i < n; i++)
+    try
     {
-        *(p + i) = i;
+        auto v = std::vector<std::string>{"abc", "def"};
+        for (auto &r : v)
+        {
+            cout << r << endl;
+        }
     }
-    for (auto i = 0; i < n; i++)
+    catch (const std::exception &e)
     {
-        cout << p[i] << endl;
+        std::cerr << e.what() << '\n';
     }
 }
