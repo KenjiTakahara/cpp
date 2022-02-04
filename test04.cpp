@@ -1,11 +1,16 @@
-#include <iostream>
-#include <vector>
-using namespace std;
-int main(int argc, char *argv[])
+#include <stdio.h>
+#include <initializer_list> // std::initializer_listを利用するのに必要
+void func(std::initializer_list<int> list)
 {
-    int x = 12;
-    int y = 34;
-    auto b = [x](auto a)
-    { return x * a; };
-    std::cout << b(y) << std::endl;
+    for (int value : list)
+    {
+        printf("%d\n", value);
+    }
+}
+int main()
+{
+    func({1, 2, 8});                             // そのまま渡す
+    std::initializer_list<int> list = {4, 5, 6}; // 一旦変数に入れてから
+    func(list);                                  // 渡す
+    return 0;
 }
