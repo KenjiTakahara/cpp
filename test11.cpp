@@ -28,6 +28,8 @@ void initPrintIntVector(int *arr, int size)
 
 int main()
 {
+    std::vector<std::string> v = {"ssss", "sssse"};
+    std::cout << v.at(2) << std::endl;
     std::unique_ptr<int[]> arr2(new int[SIZE]);
     initPrintIntVector(arr2.get(), SIZE);
 }
