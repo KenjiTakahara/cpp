@@ -1,4 +1,5 @@
 #include <iostream>
+#include <bitset>
 const char *func()
 {
     const char *str = "abvfg";
@@ -7,5 +8,7 @@ const char *func()
 
 int main()
 {
-    std::cout << func() << std::endl;
+    auto a = 0x1;
+    std::cout << a << std::endl;
+    std::cout << static_cast<std::bitset<32>>(~a) << std::endl;
 }
