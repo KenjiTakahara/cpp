@@ -12,9 +12,14 @@ struct test12
         delete num;
         cout << "num=" << *this->num << endl;
     }
+    int operator+(int a)
+    {
+        return *num + a;
+    }
 };
 
 int main()
 {
-    auto test{test12{123456789}};
+    auto test{test12{123}};
+    cout << test + 321 << endl;
 }
