@@ -10,9 +10,13 @@ namespace ton
         return f(n) * n;
     }
 }
-
 int main()
 {
-    std::function<int(int)> fn{ton::func};
-    cout << ton::f(fn, 6) << endl;
+    struct fn
+    {
+        // fn() {}
+        int operator()(int a) { return a * a; }
+    };
+    //  fn f;
+    cout << fn()(1) << endl;
 }
