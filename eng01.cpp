@@ -60,6 +60,7 @@ int main()
     cout << "boa? ", chkin(boa);
     cout << "stroke? ", chkin(str);
     auto ton = Eng(kit, boa, str, type_name);
-    cout << ton.getname() << endl;
-    cout << "Displacement is " << ton.disp() << "cc" << endl;
+
+    cout << ton.getname() << " "
+         << "Displacement is " << ton.disp() << "cc" << endl;
 }
