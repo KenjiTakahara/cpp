@@ -62,5 +62,5 @@ int main()
     auto ton = Eng(kit, boa, str, type_name);
 
     cout << ton.getname() << " "
-         << "Displacement is " << ton.disp() << "cc" << endl;
+         << "Displacement is " << ton.disp() << "cc" << flush;
 }
