@@ -1,9 +1,7 @@
+#include "all.h"
+//#include <bitset>
 #include <iostream>
-using namespace std;
 int main()
 {
-    int a = 10;
-    int &&r{a++};
-    cout << a << endl;
-    cout << r << endl;
+    cout << std::bitset<8>(0b00001111 << 6) << endl;
 }
