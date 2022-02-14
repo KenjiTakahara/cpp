@@ -65,3 +65,4 @@ using namespace std::literals;
 using std::cin;
 using std::cout;
 using std::endl;
+using std::flush;
