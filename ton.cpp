@@ -3,11 +3,13 @@
 auto f01(int a) -> int;
 auto func(void) -> int (*)(int);
 using fp = int (*(*)(void))(int);
+static const fp p = &func;
+
 int main()
 {
-    fp p = &func;
     cout << p()(123);
 }
+
 auto func(void) -> int (*)(int)
 {
     return &f01;
