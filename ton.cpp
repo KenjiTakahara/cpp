@@ -1,4 +1,5 @@
 /*様々な実験コード*/
+#pragma once
 #include "all.h"
 auto f01(int a) -> int;
 auto func(void) -> int (*)(int);
