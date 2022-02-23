@@ -1,15 +1,26 @@
 #include <iostream>
 #include <bitset>
-const char *func()
+struct Base
 {
-    const char *str = "abvfg";
-    return str;
+    /* data */
+} b1;
+
+struct Delv : public Base
+{
+    /* data */
+} d1;
+
+void func(Base &)
+{
+    std::cout << "call base\n";
+}
+void func1(Delv &)
+{
+    std::cout << "call delv\n";
 }
 
 int main()
 {
-    int a = 0b0111;
-    int b = 0b0010;
-    std::cout << (a ^ b) << std::endl;
-    // std::cout << static_cast<std::bitset<32>>(~a) << std::endl;
+    func(b1);
+    func(d1);
 }
