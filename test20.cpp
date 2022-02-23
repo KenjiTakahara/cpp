@@ -1,49 +1,39 @@
-#include <iostream>
-#include <string>
-#include <list>
-
-int main(void)
+#include <iostream>  // cout
+#include <algorithm> // generate
+#include <vector>    // vector
+#include <ctime>     // time
+#include <cstdlib>   //srand,rand
+using namespace std;
+int main(int argc, char const *argv[])
 {
-    std::list<std::string> dnaSeq;
+    std::srand(unsigned(time(NULL)));
 
-    dnaSeq.push_back("AAAAA");
-    dnaSeq.push_back("CCCCC");
-    dnaSeq.push_front("GGGGG");
-    dnaSeq.push_front("TTTTT");
-    dnaSeq.push_front("CGCGC");
+    vector<int> v(8);
 
-    std::list<std::string>::iterator itr;
+    generate(v.begin(), v.end(),
+             []() -> int
+             {
+                 return (rand() % 100);
+             });
 
-    for (itr = dnaSeq.begin(); itr != dnaSeq.end(); itr++)
+    for (auto i : v)
     {
-        std::cout << *itr << std::endl;
+        cout << i << " ";
     }
-    // AAAAA
-    // CCCCC
-    // GGGGG
-    // TTTTT
-    // CGCGC
+    cout << endl;
 
-    itr = dnaSeq.begin();
-    itr++;
-    itr++;
-    dnaSeq.erase(itr);
+    generate(v.begin(), v.end(),
+             []() -> int
+             {
+                 static int i = 0;
+                 return (++i);
+             });
 
-    itr = dnaSeq.begin();
-    itr++;
-    itr++;
-    itr++;
-    dnaSeq.insert(itr, "ATATA");
-
-    for (itr = dnaSeq.begin(); itr != dnaSeq.end(); itr++)
+    for (auto i : v)
     {
-        std::cout << *itr << std::endl;
+        cout << i << " ";
     }
-    // AAAAA
-    // CCCCC
-    // TTTTT
-    // ATATA
-    // CGCGC
+    cout << endl;
 
     return 0;
 }
