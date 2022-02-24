@@ -8,5 +8,5 @@ struct ST
 
 int main()
 {
-    std::unique_ptr<ST[]> ptr(new ST[10]);
+    std::unique_ptr<ST> ptr(new ST);
 }
