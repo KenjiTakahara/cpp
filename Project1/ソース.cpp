@@ -4,36 +4,13 @@
 #include <ctime>     // time
 #include <cstdlib>   //srand,rand
 using namespace std;
-int main(int argc, char const *argv[])
+int main()
 {
-    std::srand(unsigned(time(NULL)));
-
-    vector<int> v(8);
-
-    generate(v.begin(), v.end(),
-             []() -> int
-             {
-                 return (rand() % 100);
-             });
-
+    srand(static_cast<unsigned>(time(nullptr)));
+    auto g = []()
+    { return (rand() % 1000); };
+    vector<short> v(100);
+    generate(v.begin(), v.end(), g);
     for (auto i : v)
-    {
-        cout << i << " ";
-    }
-    cout << endl;
-
-    generate(v.begin(), v.end(),
-             []() -> int
-             {
-                 static int i = 0;
-                 return (++i);
-             });
-
-    for (auto i : v)
-    {
-        cout << i << " ";
-    }
-    cout << endl;
-
-    return 0;
+        cout << i << ',';
 }
