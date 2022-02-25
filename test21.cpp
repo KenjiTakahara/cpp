@@ -1,5 +1,3 @@
-
-#include <compare> //<=>利用の場合必須
 #include <iostream>
 
 struct C
