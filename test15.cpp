@@ -1,6 +1,6 @@
 #include <iostream>
 
-void hoge() noexcept
+void hoge() // noexcept
 {
     throw "aabb";
 }
