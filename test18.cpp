@@ -11,7 +11,7 @@ public:
         : first_name(fn), last_name(ln)
     {
     }
-    /*virtual*/ void print()
+    virtual void print()
     {
         cout << "name: " << first_name << '\n'
              << "last name: " << last_name << '\n';
@@ -40,8 +40,6 @@ int main()
     Employee em1("Jim", "Jiao");
     Engineer eng1("Jin", "Baker", "Aerospace Engineering");
 
-    Employee &r = eng1;
-    r.print();
-
-    return EXIT_SUCCESS;
+    Employee *r = &eng1;
+    r->print();
 }
