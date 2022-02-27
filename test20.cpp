@@ -4,7 +4,7 @@
 #include <ctime>     // time
 #include <cstdlib>   //srand,rand
 using namespace std;
-int main(int argc, char const *argv[])
+int main()
 {
     std::srand(unsigned(time(NULL)));
 
