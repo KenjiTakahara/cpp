@@ -2,7 +2,7 @@
 using namespace std;
 class T24
 {
-    int a, b, c;
+    const int a, b, c;
 
 public:
     T24(int a, int b, int c)
@@ -27,4 +27,6 @@ int main()
     cout << test01 << endl;
     cout << std::move(test01) << endl;
     cout << T24{1, 2, 3} << endl;
+    char str[1];
+    cout << std::end(str) - std::begin(str);
 }
