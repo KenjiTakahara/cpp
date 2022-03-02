@@ -1,13 +1,30 @@
 #include "all.h"
-std::vector<int> fn()
+using namespace std;
+class T24
 {
-    return {1, 2, 3};
-}
+    int a, b, c;
+
+public:
+    T24(int a, int b, int c)
+        : a(a), b(b), c(c) {}
+    friend ostream &operator<<(ostream &, T24 &);
+    friend ostream &operator<<(ostream &, const T24 &&);
+};
+
+ostream &operator<<(ostream &s, T24 &t)
+{
+    return s << (t.a * t.b * t.c);
+};
+
+ostream &operator<<(ostream &s, const T24 &&t)
+{
+    return s << (t.a + t.b + t.c);
+};
 
 int main()
 {
-    auto vec{fn()};
-    cout << vec.at(1) << endl;
-    // std::string str1 = "abcde";
-    // std::string str2{std::move(str1)};
+    T24 test01{2, 3, 4};
+    cout << test01 << endl;
+    cout << std::move(test01) << endl;
+    cout << T24{1, 2, 3} << endl;
 }
