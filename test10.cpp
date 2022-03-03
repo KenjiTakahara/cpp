@@ -8,7 +8,7 @@ int main()
 
     std::cout << std::size(u8"arikitari") << std::endl;
 
-    std::vector<int> v = {1, 1, 2, 3, 5, 8};
+    std::vector<int> v{1, 1, 2, 3, 5, 8};
     int hoge = 13;
     v.push_back(hoge);
     std::cout << std::size(v) << std::endl;
