@@ -29,4 +29,10 @@ int main()
     cout << T24{1, 2, 3} << endl;
     char str[1];
     cout << std::end(str) - std::begin(str);
+#include <limits>
+    constexpr float f = std::numeric_limits<float>::infinity();
+    constexpr double d = std::numeric_limits<double>::infinity();
+
+    std::cout << "float : " << f << std::endl;
+    std::cout << "double : " << d << std::endl;
 }
