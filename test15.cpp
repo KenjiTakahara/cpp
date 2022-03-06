@@ -5,11 +5,13 @@ void hoge() // noexcept
     throw "aabb";
 }
 
+void (&abc)(void) = hoge;
+
 int main()
 {
     try
     {
-        hoge();
+        abc();
     }
     catch (...)
     {
