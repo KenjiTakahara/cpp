@@ -3,7 +3,7 @@
 struct S
 {
     int a;
-    explicit S(int a = 0) : a(a) {}
+    S(int a = 0) : a(a) {}
     S &operator=(int a)
     {
         this->a = a;
