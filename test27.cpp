@@ -25,4 +25,12 @@ int main()
     { cout << bp->func(2) << '\n'
            << bp->str << endl; };
     fn(&obj1);
+
+    cout <<
+        [](std::vector<int> && vec) -> auto
+    {
+        return std::accumulate(vec.begin(), vec.end(), 0);
+    }
+    ({1, 2, 3, 4, 5, 3, 5, 6, 67, 78, 8, 9, 90})
+        << endl;
 }
